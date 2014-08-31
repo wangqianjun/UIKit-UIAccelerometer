@@ -8,7 +8,24 @@
 
 #import "ViewController.h"
 
+@interface ViewController (private)
+
+
+
+@end
+
+@implementation ViewController (private)
+
+
+
+@end
+
+
+
 @interface ViewController ()
+
+@property(nonatomic, strong)CMMotionManager *motionManager;
+
 
 @end
 
@@ -17,7 +34,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)initMotion
+{
+    self.motionManager = [[CMMotionManager alloc]init];
+    
+}
+
+- (void)accelerometer
+{
+    
 }
 
 - (void)didReceiveMemoryWarning

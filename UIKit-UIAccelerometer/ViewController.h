@@ -6,8 +6,13 @@
 //  Copyright (c) 2014年 王钱钧. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+/**
+ *  UIAccelerometer and UIAccelerometerDelegate were replaced by the CoreMotion framework
+ */
 
-@interface ViewController : UIViewController
+#import <UIKit/UIKit.h>
+#import <CoreMotion/CoreMotion.h>
+
+@interface ViewController : UIViewController<UIAccelerometerDelegate>
 
 @end
